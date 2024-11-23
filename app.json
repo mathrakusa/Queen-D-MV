@@ -1,0 +1,46 @@
+{
+  "name": "INFINITY-MOVIE-BOT",
+  "description": "QUEEN-D MOVIE BOT is movie download wa bot created by Epzi",
+  "logo": "https://github.com/Epzilk/QueenMatheeDB/blob/main/botlogos/infinitybotlogo.png?raw=true",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "MV_SEND_JID": {
+      "description": "Put movie send jid.",
+      "required": true
+    },
+    
+    "MODE": {
+      "description": "Put your mode.",
+      "required": true
+    },
+    
+    "AUTO_AI": {
+      "description": "Put on or off.",
+      "required": true
+    },
+    
+    "AUTO_AI_JID": {
+      "description": "Put the auto ai send jid.",
+      "required": true
+    },
+    
+    "BLOCK_JID": {
+      "description": "Put the block jid.",
+      "required": false
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
